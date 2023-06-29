@@ -1,0 +1,45 @@
+/* ~ ____________________ {My Global Style } ____________________*/
+
+:root {
+  --color-main: #e65f78;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* & ____________________ {Reapeted Style} ____________________*/
+
+/* ^ ____________________ {Header Section } ____________________*/
+
+.home {
+  background-image: linear-gradient(#000a,#000a), url(../images/header-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.description{
+    max-width: 500px;
+    
+}
+
+.my-outline-btn{
+    --bs-btn-color:#fff;
+    --bs-btn-border-color:#fff;
+    --bs-btn-hover-color:#000;
+    --bs-btn-hover-bg:#fff;
+    --bs-btn-hover-border-color:#fff;
+
+    --bs-btn-padding-x : 1.25rem;
+    --bs-btn-padding-y :.625rem ;
+    /* --bs-btn-border-radius:100vh; */
+
+}
