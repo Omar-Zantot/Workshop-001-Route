@@ -19,27 +19,60 @@ h6 {
 
 /* & ____________________ {Reapeted Style} ____________________*/
 
-/* ^ ____________________ {Header Section } ____________________*/
+.text-main {
+  color: var(--color-main);
+}
+
+/* ^ ____________________ {Navbar Style } ____________________*/
+
+.navbar-nav .nav-link.active {
+  color: var(--color-main);
+}
+
+/* ^ ____________________ {Header Style } ____________________*/
 
 .home {
-  background-image: linear-gradient(#000a,#000a), url(../images/header-bg.jpg);
+  background-image: linear-gradient(#000a, #000a), url(../images/header-bg.jpg);
   background-position: center center;
   background-size: cover;
 }
-.description{
-    max-width: 500px;
-    
+.description {
+  max-width: 500px;
 }
 
-.my-outline-btn{
-    --bs-btn-color:#fff;
-    --bs-btn-border-color:#fff;
-    --bs-btn-hover-color:#000;
-    --bs-btn-hover-bg:#fff;
-    --bs-btn-hover-border-color:#fff;
+.my-outline-btn {
+  --bs-btn-color: #fff;
+  --bs-btn-border-color: #fff;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #fff;
+  --bs-btn-hover-border-color: #fff;
 
-    --bs-btn-padding-x : 1.25rem;
-    --bs-btn-padding-y :.625rem ;
-    /* --bs-btn-border-radius:100vh; */
-
+  --bs-btn-padding-x: 1.25rem;
+  --bs-btn-padding-y: 0.625rem;
+  /* --bs-btn-border-radius:100vh; */
 }
+
+.home .container {
+  padding-top: 55px;
+}
+
+/* ^ ____________________ {About Style } ____________________*/
+
+.social-links li a {
+  display: flex; /* anchor => block , childern => flex-items*/
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #999;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color:inherit;
+  transition: border-color 400ms m, color 400ms;
+}
+
+.social-links li a:hover{
+    border-color: var(--color-main);
+    color: var(--color-main);
+}
+
